@@ -32,7 +32,7 @@ router.post("/purchase", auth, (req, res) => {
   state.processedReceipts.add(receiptId)
   state.daily.revenue += amount
 
-  if (amount >= 1000) {
+  if (amount >= 20000) {
     discord.send(process.env.DISCORD_CHANNEL_ALERTS, `Revenue alert\nAmount: ${amount}`)
   }
 
