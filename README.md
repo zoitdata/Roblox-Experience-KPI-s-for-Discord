@@ -2,7 +2,7 @@
 
 A production-ready analytics backend that connects Roblox game servers with Discord.
 It collects live and aggregated KPIs, stores them persistently, and generates daily and weekly reports including dark-mode charts.
-Please note that these are just the Basics, API / Auth Keys would need to be added by yourself.
+Please note that these are just the Basics, API / Auth Keys would need to be added by yourself. Also some Variables in the Scripts are set to a low standard value, please change them accordingly to the size of the Game (players, revenue etc.). 
 
 ---
 
