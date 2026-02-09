@@ -1,4 +1,4 @@
-# 🎮 Game KPIs for Discord
+# 🎮 Roblox Experience KPIs for Discord
 
 A self-hosted **Roblox analytics backend** that collects in-game KPIs and posts reports, charts, and statistics directly to **Discord**.
 
