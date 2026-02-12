@@ -1,3 +1,5 @@
+-- @02zoit | 12.02.2026
+
 local MarketplaceService = game:GetService("MarketplaceService")
 local HttpService = game:GetService("HttpService")
 local Config = require(script.Config)

@@ -1,3 +1,5 @@
+// @02zoit | 12.02.2026
+
 const { Client, GatewayIntentBits } = require("discord.js")
 
 const client = new Client({

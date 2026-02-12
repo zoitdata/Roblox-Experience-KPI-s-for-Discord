@@ -1,3 +1,5 @@
+// @02zoit | 12.02.2026
+
 require("dotenv").config()
 const express = require("express")
 const api = require("./api")

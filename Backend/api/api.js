@@ -1,3 +1,5 @@
+// @02zoit | 12.02.2026
+
 const express = require("express")
 const state = require("./state")
 const discord = require("./discord")
@@ -5,7 +7,7 @@ const auth = require("./auth")
 
 const router = express.Router()
 
-//CCU UPDATE
+//CCU update
 
 router.post("/ccu", auth, (req, res) => {
   const ccu = req.body.ccu
@@ -24,14 +26,14 @@ router.post("/ccu", auth, (req, res) => {
   res.sendStatus(200)
 })
 
-//PLAYER JOIN
+//palyer join
 
 router.post("/join", auth, (req, res) => {
   state.daily.joins++
   res.sendStatus(200)
 })
 
-//PURCHASE 
+//purchases 
 
 router.post("/purchase", auth, (req, res) => {
   const { receiptId, amount } = req.body
@@ -40,23 +42,23 @@ router.post("/purchase", auth, (req, res) => {
     return res.sendStatus(400)
   }
 
-  // Prevent duplicate processing
+  // prevent duplicate processing
   if (state.processedReceipts.has(receiptId)) {
     return res.sendStatus(200)
   }
 
   state.processedReceipts.add(receiptId)
 
-  // Daily aggregation
+  // daily aggregation
   state.daily.revenue += amount
 
-  // Hourly aggregation (for spike detection)
+  // hourly aggregation (for spike detection)
   state.hourly.revenue += amount
 
   res.sendStatus(200)
 })
 
-// SESSION START
+// session start
 
 router.post("/session/start", auth, (req, res) => {
   const { playerId, timestamp } = req.body
@@ -69,8 +71,7 @@ router.post("/session/start", auth, (req, res) => {
   res.sendStatus(200)
 })
 
-//SESSION END
-
+// session end
 router.post("/session/end", auth, (req, res) => {
   const { playerId, timestamp } = req.body
 

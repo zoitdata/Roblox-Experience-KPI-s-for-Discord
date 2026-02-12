@@ -1,3 +1,5 @@
+-- @02zoit | 12.02.2026
+
 local HttpService = game:GetService("HttpService")
 local Auth = {}
 

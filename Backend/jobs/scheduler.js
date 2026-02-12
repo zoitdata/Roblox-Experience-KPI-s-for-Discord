@@ -1,3 +1,5 @@
+// @02zoit | 12.02.2026
+
 const state = require("./state")
 const discord = require("./discord")
 const db = require("./db")

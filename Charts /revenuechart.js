@@ -1,3 +1,5 @@
+// @02zoit | 12.02.2026
+
 const QuickChart = require("quickchart-js")
 const fs = require("fs")
 const t = require("./theme")

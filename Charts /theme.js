@@ -1,3 +1,5 @@
+// @02zoit | 12.02.2026
+
 module.exports = {
   bg: "#0e1117",
   grid: "#1f2933",

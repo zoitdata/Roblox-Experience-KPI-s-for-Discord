@@ -1,3 +1,5 @@
+// @02zoit | 12.02.2026
+
 const fs = require("fs")
 const path = require("path")
 

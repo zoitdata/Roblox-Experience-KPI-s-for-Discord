@@ -1,3 +1,5 @@
+// @02zoit | 12.02.2026
+
 module.exports = {
   ccu: 0,
 

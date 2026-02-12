@@ -1,3 +1,5 @@
+// @02zoit | 12.02.2026
+
 const sqlite3 = require("sqlite3").verbose()
 const path = require("path")
 

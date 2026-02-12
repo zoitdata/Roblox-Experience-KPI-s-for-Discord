@@ -1,3 +1,5 @@
+// @02zoit | 12.02.2026
+
 const crypto = require("crypto")
 const MAX_AGE = 60
 
