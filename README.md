@@ -23,15 +23,15 @@ This project allows Roblox developers to track player activity, session behavior
 
 
 Roblox Game Servers
-↓
+->
 Signed HTTPS Requests
-↓
+->
 Node.js Backend (Ubuntu Server 22.04 LTS)
-↓
+->
 SQLite Database
-↓
+->
 Charts & Aggregated Data
-↓
+->
 Discord Channel Reports
 
 Note: I wont give you guys an tutorial on how to correctly set up the VM / needed software. 
